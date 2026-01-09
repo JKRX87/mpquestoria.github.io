@@ -98,23 +98,31 @@ footer {
   align-items: center;
   gap: 12px;
   background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.12);
   padding: 12px 16px;
   border-radius: 12px;
   color: #fff;
   text-decoration: none;
   font-size: 16px;
-  transition: 0.2s;
-}
-
-.social-item:hover {
-  transform: translateY(-2px);
-  background: rgba(255,255,255,0.1);
+  transition: 0.25s ease;
+  backdrop-filter: blur(8px);
 }
 
 .social-item img {
   width: 22px;
-  opacity: 0.8;
+  opacity: 0.95;
+  transition: 0.25s ease;
+}
+
+.social-item:hover {
+  transform: translateY(-3px) scale(1.02);
+  background: rgba(139,92,246,0.25);
+  box-shadow: 0 0 12px rgba(139,92,246,0.45);
+}
+
+.social-item:hover img {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.8));
 }
 
 .screenshots {
