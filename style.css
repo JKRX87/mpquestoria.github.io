@@ -11,7 +11,8 @@ header {
 }
 
 .logo-block img {
-  width: 180px;
+  width: 120px;
+  max-width: 40vw;
   border-radius: 24px;
   margin-bottom: 20px;
 }
