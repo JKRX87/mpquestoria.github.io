@@ -150,3 +150,41 @@ footer {
   border: 1px solid rgba(255,255,255,0.15);
   box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
+
+.social-header {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  display: flex;
+  gap: 8px;
+  z-index: 999;
+}
+
+.social-btn {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all .2s ease;
+}
+
+.social-btn:hover {
+  background: rgba(255,255,255,0.16);
+  border-color: rgba(255,255,255,0.3);
+}
+
+@media (max-width: 480px) {
+  .social-btn {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+  .social-header {
+    top: 12px;
+    right: 12px;
+  }
+}
