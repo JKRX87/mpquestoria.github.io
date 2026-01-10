@@ -310,3 +310,26 @@ body {
   max-width: 480px; /* идеальная ширина под Telegram мини апп */
   background: #0d0f18;
 }
+
+.whitepaper {
+  margin: 20px 0;
+}
+
+.whitepaper-btn {
+  background: linear-gradient(90deg, #e85cff, #6d79ff);
+  padding: 12px 28px;
+  border-radius: 40px;
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+  box-shadow: 0 4px 14px rgba(109,121,255,0.35);
+}
+
+.whitepaper-btn:hover {
+  opacity: 0.85;
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(109,121,255,0.55);
+}
