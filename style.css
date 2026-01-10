@@ -223,3 +223,66 @@ main {
   padding-top: 60px; /* чтобы под соцпанелью был отступ */
 }
 
+.social-footer {
+  margin: 40px 20px;
+  text-align: center;
+  animation: fadeInUp .8s ease forwards;
+}
+
+.social-footer .social-title {
+  font-size: 16px;
+  opacity: 0.75;
+  margin-bottom: 10px;
+}
+
+/* иконки как кнопки */
+.social-footer .social-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-footer .social-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  transition: 0.22s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* тень */
+}
+
+.social-footer .social-btn img {
+  width: 20px;
+  height: 20px;
+  transition: 0.22s ease;
+}
+
+/* hover эффект как у HK */
+.social-footer .social-btn:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.35);
+  box-shadow: 0 6px 18px rgba(180,120,255,0.45);
+}
+
+.social-footer .social-btn:hover img {
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.9));
+}
+
+/* анимация появления */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
