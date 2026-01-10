@@ -218,3 +218,8 @@ footer {
     font-size: 10px;
   }
 }
+
+main {
+  padding-top: 60px; /* чтобы под соцпанелью был отступ */
+}
+
