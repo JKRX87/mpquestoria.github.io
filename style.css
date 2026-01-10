@@ -125,7 +125,7 @@ footer {
   filter: drop-shadow(0 0 6px rgba(255,255,255,0.8));
 }
 
-.shots {
+.screenshots {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,26 +133,26 @@ footer {
   padding: 0 16px;
 }
 
-.shots img {
+.screenshots img {
   width: 100%;
   max-width: 360px;
   height: auto;
   border-radius: 18px;
   border: 1px solid rgba(255,255,255,0.15);
   box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+  object-fit: cover;
 }
 
-
-.shots h2 {
+.screenshots h2 {
   font-size: 22px;
   margin-bottom: 20px;
 }
 
-.shotы {
+.shot {
   margin-bottom: 26px;
 }
 
-.shot-caption {
+.screenshots-caption {
   font-size: 15px;
   margin-bottom: 10px;
   opacity: 0.85;
@@ -206,11 +206,10 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .shots img {
+  .screenshots img {
     max-width: 300px;
     border-radius: 16px;
   }
-}
 
   .social-btn {
     width: 24px;
